@@ -1,0 +1,7 @@
+<launch>
+<arg name="port" />
+<node name="serialnode" pkg="rosserial_xbee" type="xbee_network.py" args="${port} 1">
+</node>
+<node name="odom" pkg="odom" type="odom"/>
+
+</launch>
